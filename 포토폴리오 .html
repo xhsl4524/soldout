@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웍스아웃</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-family: inherit;
+            line-height: inherit;
+
+        }
+
+        .mein {
+            font-size: .5rem;
+            line-height: 0.75rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            text-align: center;
+            width: auto;
+            height: 80px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .mein.roll {
+            height: 10px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .fluiding {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .row {
+            margin: auto;
+
+        }
+
+
+        ul.myMenu {
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+            list-style-type: none;
+
+        }
+
+
+
+        ul.myMenu>li {
+            display: inline-block;
+            width: 80px;
+            padding: 5px 10px;
+            text-align: center;
+            position: relative;
+        }
+
+
+
+        ul.myMenu>li ul.submenu {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+        }
+
+        ul.myMenu>li:hover ul.submenu {
+            display: block;
+        }
+
+        ul.myMenu>li ul.submenu>li {
+            display: inline-block;
+            width: 200px;
+            padding: 1px 1px;
+            background-color: rgba(255, 255, 255, 0.8);
+
+        }
+
+        .myMenu {
+            font-size: small;
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+        }
+
+        #portfolio {
+            margin-top: 70px;
+            overflow: hidden;
+            padding-top: 10px;
+
+        }
+
+        .row {
+            float: left;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            grid-template-columns: repeat(auto-fill);
+
+        }
+
+        .grid-item img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            display: block;
+
+
+        }
+
+
+
+
+
+        .footer {
+            font-size: 0.75rem;
+            width: 100%;
+            line-height: 1rem;
+            float: left;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 0.75rem;
+            padding-top: 0.25rem;
+        }
+
+        .footer_1 {
+            color: gray;
+        }
+
+        .footer_r {
+            float: right;
+            color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--메인 -->
+    <div class="mein ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <article class=""></article>
+            <div class="container-fluid">
+                <div class="navbar-nav ">
+                    <li><a class="nav-link active" aria-current="page"
+                            href="https://www.worksout.co.kr/app-download">응모</a></li>
+                    <li><a class="nav-link active" aria-current="page"
+                            href="https://www.worksout.co.kr/store/worksout">매장정보</a></li>
+                    <li><a class="nav-link active" aria-current="page" href="#">🔍검색</a></li>
+                </div>
+                <a class="navbar-nav fw-bold fs-2 "
+                    href="http://127.0.0.1:5500/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20.html#">WORKSOUT</a>
+                <div class="navbar-nav">
+                    <li> <a class="nav-link active" href="#">관심상품</a></li>
+                    <li> <a class="nav-link active" href="https://www.worksout.co.kr/cart">장바구니</a>
+                    </li>
+                    <li><a class="nav-link active" href=" https://www.worksout.co.kr/login">로그인</a></li>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+        </nav>
+        <div class="container">
+            <ul class="myMenu">
+                <li class="menu1">남성
+                    <ul class="menu1_s submenu">
+                        <li>자켓</li>
+                        <li>스웨트&니트</li>
+                        <li>셔츠</li>
+                        <li>바지</li>
+                        <li>신발</li>
+                        <li>모자</li>
+                        <li>가방</li>
+                        <li>악세사리</li>
+                    </ul>
+
+                </li>
+                <li class="menu2">
+                    여성
+                    <ul class="menu2_s submenu">
+                        <li>자켓 </li>
+                        <li>스웨트&니트</li>
+                        <li>셔츠</li>
+                        <li>바지</li>
+                        <li>신발</li>
+                        <li>모자</li>
+                        <li>가방</li>
+                        <li>악세사리</li>
+                    </ul>
+                </li>
+                <li class="menu3">
+                    생활
+                    <ul class="menu3_s submenu">
+                        <li>홈데코</li>
+                        <li>뷰티</li>
+                        <li>보드</li>
+                        <li>책</li>
+                        <li>기타</li>
+                    </ul>
+                </li>
+                <li class="menu4">세일
+                    <ul class="menu4_s submenu">
+                        <li>자켓 </li>
+                        <li>스웨트&니트</li>
+                        <li>셔츠</li>
+                        <li>바지</li>
+                        <li>신발</li>
+                        <li>모자</li>
+                        <li>가방</li>
+                        <li>악세사리</li>
+                    </ul>
+
+                </li>
+
+                <li class="menu5">브랜드
+                    <ul class="menu5_s submenu">
+                        <li>AIME LEON DORE </li>
+                        <li>ALLTIMERS</li>
+                        <li>APOTHEKE FRAGRANCE</li>
+                        <li>ARC'TERYX</li>
+                        <li>ARCHIES</li>
+                        <li>ARIES</li>
+                        <li>ASICS</li>
+                        <li>ASSID</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!-- 포토 -->
+
+
+    <section id="portfolio" class="poto ">
+        <div class="row ">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <img src=" image/1h7rgos1p4cvq.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 ">
+                <img src="image/1hrj8cyowkqb8.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <img src="image/1iupyrohkf038.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <img src="image/1jeip70b9nsqb.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <img src="image/vey5d7f9ivs6.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <img src="image/qdsptgpxv5f5.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <img src="image/s10ksm9928fq.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <img src="image/t4neov0jlhsx.jpg" alt="" class="img-fluid">
+            </div>
+            <div class=" col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/u857t3032noi.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/urhctxuidees.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/1.jpg  " alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/5.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/6.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/7.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/8 (2).jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/uvjrcm8rko53.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="grid-item col-md-6 col-lg-3 mb-4" data-aos="fade-down">
+                <img src="image/uvbeulmqntq0.jpg" alt="" class="img-fluid">
+            </div>
+            <script>
+                AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+            </script>
+        </div>
+    </section>
+
+
+
+    <div class="footer d-flex justify-content-between">
+        <div class="footer_l ">
+            <span>© 2003-2022 주식회사 웍스아웃</span> |
+
+            <span>통신판매업신고: 2014-서울마포-0219</span> |
+            <span>호스팅사업자: 주식회사 아마존웹서비스</span> |
+            <span>사업자등록번호: 106-86-85373</span>
+            <br>
+            <span>상호명: 주식회사 웍스아웃" 주소: 서울시 마포구 월드컵북로23길 24</span> |
+            <span>전자우편주소: customer@worksout.co.kr</span> |
+            <span>대표: 강승혁, 박선영</span> |
+            <span>전화: 02-541-0854</span> |
+            <span class="block text-gray-500 font-right pt-3">
+                <a href="https://www.worksout.co.kr/terms">이용약관</a>
+                <a href="https://www.worksout.co.kr/personal">개인정보취급 방침</a>
+            </span>
+        </div>
+        <div class="footer_r ">
+            <span class="block pd-2">
+                <a href="https://www.worksout.co.kr/about"> 웍스아웃에 대하여</a>
+            </span>
+            <span>
+                <a href="https://www.worksout.co.kr/cc/faq">고객지원</a>
+            </span>
+            <span>
+                <a href="https://www.worksout.co.kr/cc/contact-us">문의하기</a>
+            </span>
+            <span>
+                <a href="https://www.worksout.co.kr/work-with-us">채용안내</a>
+            </span>
+            <br>
+            <span>구매안전 (에스크로) 서비스 가입사실 확인</span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
